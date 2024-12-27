@@ -1,0 +1,15 @@
+.list {
+    color: red;
+
+}
+li {
+    background-color: orange;
+}
+
+.list,
+li {
+
+    color: green;
+    font-size: 100px;
+
+}
