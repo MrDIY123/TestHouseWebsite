@@ -16,7 +16,8 @@ body {
     padding: 0;
     margin: 0;
     width: 100%;
-    height: 100%
+    height: 100%;
+    align-items: center;
    
 }
 
@@ -70,6 +71,28 @@ body {
     border: 3px solid blue;
     background-color: blue;
 }
+
+.banner1 {
+    align-items:center;
+    width: 1200px;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+}
+
+.hero {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 16px;
+    background-color: #1f2a37;
+    margin-top: 100px;
+    padding: 20px 40px;
+    color: white;
+    width: 80%;
+}
+
 
 .subtitle {
     text-align: left;
