@@ -78,6 +78,17 @@ body {
     flex-direction: column;
     justify-content: center;
     display: flex;
+    margin-bottom: 100px;
+}
+
+.banner2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: blueviolet;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .hero {
@@ -101,11 +112,19 @@ body {
     font-weight: 600;
 }
 
+.subheading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 1200px;
+    background-color: white;
+}
+
 
 li {
 
     color: blue;
     font-size: 20px;
-    display: inline-block;
     padding: 35px;
 }
