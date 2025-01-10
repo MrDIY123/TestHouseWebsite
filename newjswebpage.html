@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0px;
+        background-color: lightgrey;
+
+        .banner1 {
+          display: flex;
+          flex-direction: row;
+          flex: 1;
+          color: grey;
+          height: 100px;
+          width: 100%;
+          justify-content: space-between;
+        }
+        .logoBox,
+        .titleBox,
+        .clusterBox {
+          display: flex;
+          flex: 1;
+          border-radius: 16px;
+        }
+
+        .titleBox {
+          background-color: blue;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          font-weight: 600;
+        }
+
+        .logoBox {
+          background-color: black;
+          max-width: 33%;
+          padding: 25px;
+        }
+        #logo {
+          max-width: 100%;
+        }
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="banner1">
+      <div class="logoBox">
+        <img src="/images_and_links/Main Logo SVG TESTLABFINDER.svg" id="logo"/>
+        </div>
+      <div class="titleBox">Home Calculators Search Projects</div>
+    <div class="clusterBox" style="background-color: yellow"></div>
+    </div>
+
+    <div style="display: flex; align-content: center;">
+        <button class="newForm">hello</button>
+    </div>
+
+    </body>
+    </div>
+  </body>
+
+  <script>
+  let numberOne;
+  let numberTwo;
+  let numberThree;
+  let numberFour;
+  let numberChecker;
+
+    let currentNumber = (numberOne = prompt("Enter a Value", ""))
+    switch (currentNumber.trim()) {
+        case "1":
+            alert("Correct!");
+            break;}
+
+        if ((currentNumber.trim() !=="1")
+         & (currentNumber.trim() !=="5")) {
+            alert("WRONG");
+        }
+        switch (currentNumber.trim()) {
+            case "5" :
+            alert("yeah boy");
+            break;
+        }
+
+        numberTwo = prompt("Enter Value:", "");
+        numberChecker = (currentNumber == numberTwo)
+        ? "they are the same" : "they are not the same"
+
+        console.log(numberChecker);
+
+        switch (numberChecker) {
+        case "they are the same":
+        alert("The First and Second Values You Enteted are the Same");
+        break;
+        case "they are not the same":
+        alert("they are not the same");
+        }
+
+        let answer = prompt("Do you want to see the values you entered again?","");
+        if (answer.trim().toLowerCase() == "yes") {
+            alert(`First Entry: ${numberOne}, Second Entry: ${numberTwo}, Number Checker: ${numberChecker}`);
+        }
+
+        /*console.log(currentNumber);
+        console.log(numberChecker);*/
+
+ 
+
+
+
+
+
+  </script>
+
+</html>
