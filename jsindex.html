@@ -8,9 +8,18 @@
 </head>
 
 	<body>
+
+		<button 
+			id="clickHere" style="colour: white; background-color: green; border-radius: 16px; padding: 20px;">Click Here Bro...
+		</button>
+		
+
+	</body>
+
+	
 		<script>
 
-			let max = 57;
+			/* let max = 57;
 			let actual = max-13;
 			let percentage = (actual/max)*100;
 			
@@ -26,12 +35,76 @@
 			console.log(newValue);
 			console.log(oldValue);
 			console.log(finalValue);
-			console.log(errorFinalValue);
+			console.log(errorFinalValue);*/
+
+			/*let password;
+			let userName;
+
+			userName = prompt("Username", "");
+				if (userName == "") {
+					alert("Enter a Value Bro!");
+				} else if (userName == null) {
+					alert("Not Cool Bro, You Canclled!");
+					} else if (userName == "Matthew Cox") {
+					password = prompt("Password", "") 
+						if (password == "") {
+							alert("Enter a Value Bro!");
+						} else if (password == null) {
+							alert("Not Cool Bro, You Canclled!");
+						} else if (password == "theBroPassword") {
+							alert(`Welcome Big Boss ${userName}`);
+						}
+					}
+*/
+
+			/*let userName;
+
+			userName=prompt("Username","");
+			switch(userName) {
+				case null:
+				alert("Canclled!");
+				break;
+				case "":
+				alert("Enter a Value");
+				break;
+				case "Admin":
+				alert(`Welome ${userName} you massive twat!`);
+				break;
+				default:
+				alert("go to bloody sleep");
+			}
+				*/
+
+let userName
+let password
+
+
+userName = (prompt("User Name",""));
+
+switch (userName){
+	case (null):
+	alert ("Canclled!");
+	break;
+case (""):
+	alert("You Must Enter a Value Bro");
+	break;
+case ("Matt Cox"):
+	password = prompt("Password:", "");
+	alert(`Welcome back ${userName}!`);
+	break;
+default:
+	alert("Incorrect Details, Self Destruct In 5 Seconds!");
+	break;
+
+}
 
 
 
-		</script>
-		<h1>This is a JS enabled webpage</h1>
-	</body>
+
+
+	</script>
+		
+
+
 
 </html>
