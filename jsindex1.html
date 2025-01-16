@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #finalScore {
+            display: flex;
+            background-color: blue;
+            color: aliceblue;
+            border-radius: 16px;
+            padding: 20px;
+            margin-top: 25px;
+            border: solid 3px red;
+            width: 125px;
+        }
+    </style>
+  </head>
+  <body>
+    <button onclick="startInteractiveInterface()" style="padding:20px; background-color: pink; color: red;border-radius: 16px;">
+      </style>
+      The JavaScript Quiz<br><br> <strong><em>Are you actually smart?</em> </strong>
+    </button>
+
+
+
+    <div id="finalScore"> Your Final Score</div>
+
+    <script>
+
+        let question1; 
+        let question2;
+        let question3; 
+        let answer1;
+        let answer2;
+        let answer3;
+        let finalScore;
+
+        function startInteractiveInterface() {
+            question1 = prompt("How many days did it take to devlop JavaScript", "")
+            if (parseInt(question1.trim())=== 10) {
+                answer1 = (3);
+            } else {
+                answer1 = (0);
+                }
+  
+            question2 = prompt("What is the technical name for JavaScript?", "")
+            if (question2.toLowerCase().trim() == "ecmascript"){
+                answer2=(3);
+            } else {
+                answer2=(0);
+            }
+
+            question3 = prompt("true or false? - Is the logo for JavaScript a coffee cup with steam?", "")
+                if (question3.trim().toLowerCase() === "true") {
+                    answer3=(3);
+                } else {
+                    answer3=(0);
+                } 
+            
+
+            console.log(answer1);
+            console.log(answer2);
+            console.log(answer3);
+            finalScore = (answer1 + answer2 +answer3);
+
+            document.getElementById("finalScore").textContent = `Your Final Score: ${finalScore}/9` 
+
+            if (finalScore < 3) {
+               alert ("No, sorry you are stupid")
+            } else if (finalScore === 3 || finalScore <=6) {
+                alert("No, you might think you are smart but you are not")
+            } else if (finalScore === 7 || finalScore <= 9) {
+                alert("Yes, you are fairly smart")
+            }
+        
+            }
+
+            
+
+
+
+
+
+     /* console.log("Hello World");
+
+      let password;
+      let userName;
+      let firstName;
+      let eyeColour;
+      let glasses;
+
+      function startInteractiveInterface() {
+        console.log("Beauty Test Started...");
+      
+      firstName = prompt("First Name", "");
+      eyeColour = prompt("Eye Colour", "");
+      glasses = prompt("Do you wear glasses?", "");
+
+      alert("evaulating beauty.... please wait... loading.... almost there...");
+
+        if (firstName && firstName.trim().toLowerCase() === "rhian")
+         { alert (`WOW! ${firstName.trim()}, you are exceptionally beautiful!!!`)
+
+         } else if (firstName && firstName.trim().toLowerCase() === "matt") {
+            alert(`Ahh, sorry ${firstName} but you are not beautiful - oh well.`)
+        }
+
+        }
+
+
+
+
+
+
+      /* userName = prompt("Username", "");
+      if (userName === "") {
+        alert("You must enter a value!");
+        // user did not provide a value
+      } else if (userName === null) {
+        alert("Canclled");
+        // user canclled operation
+      } else if (userName !== "Admin") {
+        alert("Incorrect User Name!");
+        //user got unsername wrong
+      } else if (userName == "Admin") {
+        password = prompt("Enter Password", "");
+        //user got username correct, onto the password...
+
+        if (password === "") {
+          alert("You must enter a value!");
+          // user didnt enter a value for password.
+        } else if (password === null) {
+          alert("Canclled");
+          // user canclled the operation.
+        } else if (password == "p") {
+          alert(`Welcome Back! ${userName}`);
+          //user got password correct...
+        } else if (password !== "p") {
+          alert("Incorrect Password!");
+          //user got password wrong.
+        }
+      }
+      */
+
+
+
+      let message;
+
+if (login == 'Employee') {
+  message = 'Hello';
+} else if (login == 'Director') {
+  message = 'Greetings';
+} else if (login == '') {
+  message = 'No login';
+} else {
+  message = '';
+}
+
+let login;
+login = "Employee";
+
+let message = (login == "Employee") ? "Hello you PC" : 
+(login == "Director") ? "You slick cunt why hello" : 
+(login == "") ? "No login entered you fucking idiot" : "not defined" ;
+
+console.log(message);
+
+
+
+
+
+
+switch (browser) {
+  case 'Edge':
+    alert( "You've got the Edge!" );
+    break;
+
+  case 'Chrome':
+  case 'Firefox':
+  case 'Safari':
+  case 'Opera':
+    alert( 'Okay we support these browsers too' );
+    break;
+
+  default:
+    alert( 'We hope that this page looks ok!' );
+}
+
+
+let browser = "Chrome";
+
+if (browser == "edge") {
+    alert("You've got the edge");
+} else if (browser.toLowerCase() == "chrome" && "firefox" && "safari" && "opera") {
+    alert("OK, we support these browsers too");
+} else {
+    alert ("You are flying solo in an unsupoorted browser - we hope this page looks OK");
+}
+
+    </script>
+  </body>
+</html>
+ 
