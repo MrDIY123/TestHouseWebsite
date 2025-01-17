@@ -75,11 +75,12 @@
 			}
 				*/
 
-let userName
+/*let userName
 let password
 
 
-userName = (prompt("User Name",""));
+userName = prompt("User Name","");
+userName = (userName.trim().toLowerCase());
 
 switch (userName){
 	case (null):
@@ -88,17 +89,70 @@ switch (userName){
 case (""):
 	alert("You Must Enter a Value Bro");
 	break;
-case ("Matt Cox"):
+case ("matt cox"):
 	password = prompt("Password:", "");
-	alert(`Welcome back ${userName}!`);
+	userName = ("Matt Cox");
+	alert(`Welcome back ${userName}`);
 	break;
 default:
 	alert("Incorrect Details, Self Destruct In 5 Seconds!");
+	alert("4");
+	alert("3");
+	alert("2.....1.....................");
+	alert("lul jks");
+
 	break;
 
+} */
+
+
+
+let dogName;
+let dogBreed;
+let nameScore;
+let breedScore;
+let totalScore;
+
+dogName=prompt("Dog Name","");
+dogBreed=prompt("Dog Breed","");
+/*console.log(dogName);
+console.log(dogBreed);*/
+
+dogName = (dogName.trim().toLowerCase());
+dogBreed = (dogBreed.trim().toLowerCase());
+console.log(dogName);
+console.log(dogBreed);
+
+if (dogName == "polly") {
+	nameScore = 10;
+} else if (dogName !== "polly") {
+	nameScore = 0; }
+if (dogBreed == "poodle") {
+	breedScore = 10;
+} else if (dogBreed !== "poodle") {
+	breedScore = 0; }
+
+console.log(nameScore);
+console.log(breedScore);
+
+totalScore = (nameScore+breedScore);
+console.log(totalScore);
+
+console.log(totalScore < 10);
+
+
+let scoreHeat;
+scoreHeat = (totalScore <=10 && dogName == "polly")? "Hot" : "Cold"
+console.log(scoreHeat);
+
+switch (scoreHeat) {
+	case "Hot":
+		alert("That's not polly, or a poodle!");
+		break;
+	case "Cold":
+		alert("Thay Could Actually Be Polly");
+		break;
 }
-
-
 
 
 
