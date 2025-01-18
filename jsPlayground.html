@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head> 
+    <title>JavaScript is Dope</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+  <h1>Test Title</h1>
+  <button class = "JSenabled">click here bro</button>
+</body>
+
+
+
+
+<script>
+
+let string1 = prompt("Enter String", "");
+let capitalise = (string1) => {
+  let extraction1 = (string1.slice(1,));
+  let extraction2 = (string1.at(0))
+  let result = (extraction2.toUpperCase())+(extraction1.toLowerCase());
+  return alert (result);}
+
+proceed = confirm("Capitalise?");
+if (proceed) {
+  capitalise(string1)
+}
+
+/*let addNums = function(value1, value2, value3) {
+  return (+value1)+(+value2)+(+value3)
+};
+
+value1 = prompt("Enter a number:","");
+value2 = prompt("Enter a number:","");
+value3 = prompt("Enter a number:","");
+
+let proceed = confirm(`Ready to add these numbers? number 1 = ${value1} number 2 = ${value2} number 3 = ${value3}`);
+
+if (proceed) {
+  addNums(value1, value2, value3)
+  console.log(addNums(value1, value2, value3));
+} 
+
+let newFunc = (oldValue, newValue) => (+oldValue) + (+newValue);
+
+*/
+
+</script>
+
+ </html>
